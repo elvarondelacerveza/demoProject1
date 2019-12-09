@@ -26,7 +26,7 @@ public class Suite1 {
 		DesiredCapabilities caps = null;
 		caps= DesiredCapabilities.chrome();
 		caps.setBrowserName("chrome");
-		caps.setPlatform(Platform.LINUX);
+		caps.setPlatform(Platform.ANDROID);
 		driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),caps);
 		driver.manage().window().maximize();
 	}
