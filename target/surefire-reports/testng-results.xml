@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11309" started-at="2019-12-09T02:54:17Z" finished-at="2019-12-09T02:54:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11309" started-at="2019-12-09T02:54:17Z" finished-at="2019-12-09T02:54:28Z">
+      <class name="demoProject1.test.Suite1">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:demoProject1.test.Suite1@6bf256fa]" name="launchDriver" is-config="true" duration-ms="5902" started-at="2019-12-09T02:54:17Z" finished-at="2019-12-09T02:54:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchDriver -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:demoProject1.test.Suite1@6bf256fa]" name="testCase1" duration-ms="962" started-at="2019-12-09T02:54:23Z" finished-at="2019-12-09T02:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:demoProject1.test.Suite1@6bf256fa]" name="testCase2" duration-ms="2618" started-at="2019-12-09T02:54:24Z" finished-at="2019-12-09T02:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="testCase3()[pri:0, instance:demoProject1.test.Suite1@6bf256fa]" name="testCase3" duration-ms="1196" started-at="2019-12-09T02:54:27Z" finished-at="2019-12-09T02:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:demoProject1.test.Suite1@6bf256fa]" name="quit" is-config="true" duration-ms="616" started-at="2019-12-09T02:54:28Z" finished-at="2019-12-09T02:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- demoProject1.test.Suite1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
