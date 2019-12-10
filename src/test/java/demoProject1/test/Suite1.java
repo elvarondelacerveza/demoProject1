@@ -29,7 +29,9 @@ public class Suite1 {
 		caps= DesiredCapabilities.chrome();
 		
 		caps.setBrowserName("chrome");
-		caps.setPlatform(Platform.WIN10);
+		caps.setPlatform(Platform.LINUX);
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		
 		driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),caps);
 		driver.manage().window().maximize();
 	}
