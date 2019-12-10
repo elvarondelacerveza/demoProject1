@@ -2,6 +2,8 @@ package demoProject1.test;
 
 import org.testng.annotations.Test;
 
+import bsh.Capabilities;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -25,14 +27,15 @@ public class Suite1 {
 	public void launchDriver() throws MalformedURLException {
 		DesiredCapabilities caps = null;
 		caps= DesiredCapabilities.chrome();
+		
 		caps.setBrowserName("chrome");
-		caps.setPlatform(Platform.ANDROID);
+		caps.setPlatform(Platform.WIN10);
 		driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),caps);
 		driver.manage().window().maximize();
 	}
 	@Test
 	public void testCase1() {
-		driver.get("https://www.google.com.mx/");
+		driver.get("https://www.southwest.com/");
 		System.out.println(driver.getTitle());
 	}
 	@Test
