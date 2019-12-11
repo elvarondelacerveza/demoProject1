@@ -1,39 +1,41 @@
 package demoProject1.test;
 
-import org.testng.annotations.Test;
-
-import bsh.Capabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Suite1 {
-
-	public static WebDriver driver;
+public class JavaSample {
+	
+public static WebDriver driver;
+public static final String USERNAME = "marcoparra1";
+public static final String AUTOMATE_KEY = "QzVY3pcWqd88cix41JAU";
+public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	@BeforeMethod
 	public void launchDriver() throws MalformedURLException {
-		DesiredCapabilities caps = null;
-		caps= DesiredCapabilities.chrome();
-		
-		caps.setBrowserName("chrome");
-		caps.setPlatform(Platform.LINUX);
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		
-		driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),caps);
+
+	    DesiredCapabilities caps = new DesiredCapabilities();
+	    caps.setCapability("browserName", "android");
+	    caps.setCapability("device", "Samsung Galaxy S8");
+	    caps.setCapability("realMobile", "true");
+	    caps.setCapability("os_version", "7.0");
+	    caps.setCapability("name", "Bstack-[Java] Sample Test");
+	    
+		driver = new RemoteWebDriver(new URL(URL),caps);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 	}
 	@Test
 	public void testCase1() {
@@ -46,12 +48,12 @@ public class Suite1 {
 //		System.out.println(driver.getTitle());
 //	}
 //	@Test
-//	public void testCase3() {
+//	public void testCase3() {	
 //		driver.get("https://chromedriver.chromium.org/downloads");
 //		System.out.println(driver.getTitle());
 //	}
-	@AfterTest
-	public void quit() {
-		driver.quit();
-	}
+//	@AfterTest
+//	public void quit() {
+//		driver.quit();
+//	}
 }

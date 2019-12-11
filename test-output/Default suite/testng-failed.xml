@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoProject1.test.Suite1">
+      <class name="demoProject1.test.JavaSample">
         <methods>
-          <include name="testCase3"/>
-          <include name="testCase2"/>
-          <include name="launchDriver"/>
           <include name="testCase1"/>
           <include name="quit"/>
+          <include name="launchDriver"/>
         </methods>
-      </class> <!-- demoProject1.test.Suite1 -->
+      </class> <!-- demoProject1.test.JavaSample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
