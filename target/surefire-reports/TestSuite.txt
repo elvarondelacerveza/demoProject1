@@ -1,15 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 6, Time elapsed: 1.553 sec <<< FAILURE! - in TestSuite
-launchDriver(demoProject1.test.Suite1)  Time elapsed: 1.317 sec  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }
-Command duration or timeout: 112 milliseconds
-	at demoProject1.test.Suite1.launchDriver(Suite1.java:33)
-Caused by: org.openqa.selenium.WebDriverException: 
-Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.399 sec <<< FAILURE! - in TestSuite
+testCase3(demoProject1.test.Suite1)  Time elapsed: 5.582 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'English')]"}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'LSTKAG230469', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: unknown
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.ZsHN9y}, goog:chromeOptions: {debuggerAddress: localhost:40391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 456760522b829a65402768ac31b...}
+Session ID: 456760522b829a65402768ac31b5656e
+*** Element info: {Using=xpath, value=//button[contains(text(), 'English')]}
+	at demoProject1.test.Suite1.testCase3(Suite1.java:54)
 

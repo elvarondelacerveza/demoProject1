@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.553" tests="7" errors="0" skipped="6" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="19.399" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\marco.parra\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5723343036830128715.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\marco.parra\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf318165651609638907.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/lib/amd64;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\ant\apache-ant-1.10.6\bin\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\marco.parra\AppData\Local\Continuum\anaconda3\envs\PBotEnviroment\Library\bin;C:\Users\marco.parra\AppData\Local\Microsoft\WindowsApps;;C:\Users\marco.parra\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\system32;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_221/bin/../jre/lib/amd64;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk1.8.0_221\bin;C:\ant\apache-ant-1.10.6\bin\bin;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\marco.parra\AppData\Local\Continuum\anaconda3\envs\PBotEnviroment\Library\bin;C:\Users\marco.parra\AppData\Local\Microsoft\WindowsApps;;C:\Users\marco.parra\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\marco.parra\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,37 +60,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="launchDriver" classname="demoProject1.test.Suite1" time="1.317">
-    <failure message="Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }&#10;Command duration or timeout: 112 milliseconds" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
-Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }
-Command duration or timeout: 112 milliseconds
-	at demoProject1.test.Suite1.launchDriver(Suite1.java:33)
-Caused by: org.openqa.selenium.WebDriverException: 
-Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }
+  <testcase name="testCase1" classname="demoProject1.test.Suite1" time="2.796"/>
+  <testcase name="testCase2" classname="demoProject1.test.Suite1" time="2.52"/>
+  <testcase name="testCase3" classname="demoProject1.test.Suite1" time="5.582">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(text(), &apos;English&apos;)]&quot;}&#10;  (Session info: chrome=78.0.3904.70)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;LSTKAG230469&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.ZsHN9y}, goog:chromeOptions: {debuggerAddress: localhost:40391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 456760522b829a65402768ac31b...}&#10;Session ID: 456760522b829a65402768ac31b5656e&#10;*** Element info: {Using=xpath, value=//button[contains(text(), &apos;English&apos;)]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(text(), 'English')]"}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'LSTKAG230469', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: unknown
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /tmp/.com.google.Chrome.ZsHN9y}, goog:chromeOptions: {debuggerAddress: localhost:40391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 456760522b829a65402768ac31b...}
+Session ID: 456760522b829a65402768ac31b5656e
+*** Element info: {Using=xpath, value=//button[contains(text(), 'English')]}
+	at demoProject1.test.Suite1.testCase3(Suite1.java:54)
 </failure>
-    <system-err><![CDATA[Dec 10, 2019 3:05:58 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+    <system-err><![CDATA[Dec 12, 2019 7:57:58 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Dec 12, 2019 7:58:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 ]]></system-err>
-  </testcase>
-  <testcase name="launchDriver" classname="demoProject1.test.Suite1" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="launchDriver" classname="demoProject1.test.Suite1" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="testCase1" classname="demoProject1.test.Suite1" time="0">
-    <skipped message="Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }&#10;Command duration or timeout: 112 milliseconds"/>
-  </testcase>
-  <testcase name="testCase2" classname="demoProject1.test.Suite1" time="0">
-    <skipped message="Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }&#10;Command duration or timeout: 112 milliseconds"/>
-  </testcase>
-  <testcase name="testCase3" classname="demoProject1.test.Suite1" time="0">
-    <skipped message="Error forwarding the new session cannot find : Capabilities {browserName: chrome, platform: WIN10, version: }&#10;Command duration or timeout: 112 milliseconds"/>
-  </testcase>
-  <testcase name="quit" classname="demoProject1.test.Suite1" time="0">
-    <skipped/>
   </testcase>
 </testsuite>

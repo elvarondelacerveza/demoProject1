@@ -1,0 +1,13 @@
+<arquillian xmlns="http://jboss.com/arquillian" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+   <extension qualifier="docker">
+      <property name="serverVersion">1.27</property>
+      <property name="serverUri">tcp://localhost:2375</property>
+      <property name="dockerContainersFile">./docker-compose.yml</property>
+   </extension>
+   <extension qualifier="webdriver">
+      <property name="remoteAddress">http://localhost:4444/wd/hub</property>
+      <property name="browser">firefox</property>
+      <property name="remote">true</property>
+      <property name="remoteReusable">true</property>
+   </extension>
+</arquillian>

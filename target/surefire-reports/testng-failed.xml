@@ -6,9 +6,7 @@
       <class name="demoProject1.test.Suite1">
         <methods>
           <include name="testCase3"/>
-          <include name="testCase2"/>
           <include name="launchDriver"/>
-          <include name="testCase1"/>
           <include name="quit"/>
         </methods>
       </class> <!-- demoProject1.test.Suite1 -->
